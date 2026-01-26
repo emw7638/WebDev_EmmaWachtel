@@ -1,2 +1,2 @@
 # WebDev_EmmaWachtel
-Working class notes for intro to web dev spring 26
+Working class notes for Intro to Web Dev Spring 26
