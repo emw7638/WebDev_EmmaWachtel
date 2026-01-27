@@ -1,4 +1,4 @@
-# Dubai-Style Chewy Chocolate Pistachio Cookies
+# Dubai Chewy Cookie
 
 ![Dubai Chewy Cookie](https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2026/01/22/b797f0d3-284d-410c-9da4-aa50550fff3e_583f532b.jpg?itok=hgnaz4lH&v=1769088076)
 
