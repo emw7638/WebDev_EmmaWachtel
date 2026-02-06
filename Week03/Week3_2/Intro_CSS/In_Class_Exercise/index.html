@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to CSS Text and Spans</title>
+    <style type="text/CSS">
+      /* universal selector - always the first CSS rule because the intent is to 
+      reset and then overwrite with more specific styles/selectors further down */
+      * {
+        /* border: 1px solid blue; */
+        margin: 0;
+        padding: 0;
+      }
+      /* tag selector applies to all p tags on the page */
+      p {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: #f50;
+        /* abouve is short hand for #ff5500; */
+        font-family: "Courier New", Courier, monospace;
+      }
+      a {
+        color: cornflowerblue;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .silly_text {
+        font-family: fantasy;
+        font-size: 1.5rem;
+      }
+
+      #important_stuff {
+        font-size: xx-large;
+        font-weight: bold;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        color: chartreuse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="important_stuff">This is important. It gets an ID.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus
+      lorem lectus, nec consequat ipsum ultricies venenatis. Vivamus tincidunt
+      nisl vel pharetra imperdiet. Donec maximus, quam a porttitor viverra, odio
+      dolor auctor sapien, ornare ullamcorper magna metus ac metus. Nam
+      vulputate dapibus ultrices.
+      <a href="#" class="silly_text"
+        >Sed maximus sapien id nunc finibus rhoncus.</a
+      >
+      Nunc vitae mollis neque, at consectetur arcu. Integer ut quam vel velit
+      eleifend auctor. Etiam aliquet congue tristique. Integer sollicitudin
+      rutrum nisi, ut pharetra enim sagittis a. Fusce dolor felis, ultrices id
+      scelerisque sit amet, luctus ut libero. Curabitur sit amet sem volutpat
+      felis eleifend gravida. Aenean ac malesuada ligula. Duis vehicula leo sed
+      neque efficitur tempor. Aliquam posuere quam neque, a lobortis nisl
+      iaculis et. Nam blandit est sed lorem mattis, eu euismod tortor pharetra.
+      Aliquam efficitur egestas blandit.
+    </p>
+    <p>
+      Proin tincidunt, nulla sit amet posuere feugiat, nibh urna pretium eros,
+      ultrices sagittis nunc diam vel lacus. Pellentesque hendrerit quam nisl,
+      sit amet gravida elit imperdiet non. Etiam consequat quis elit id
+      tristique. Donec interdum lacinia urna a laoreet.
+      <span class="silly_text"> viverra sapienin auctor molestie.</span> Ut eu
+      lacinia elit. In felis ante, porttitor et porta eu, imperdiet eget nisi.
+      Cras sollicitudin mauris nec imperdiet mattis. Donec interdum quam nec
+      condimentum tristique. Praesent lacinia suscipit iaculis. Nulla a rutrum
+      tortor. Praesent vel ligula nec turpis molestie dictum a in justo. Ut
+      suscipit dictum bibendum. Duis ornare turpis nec auctor iaculis.
+    </p>
+    <p>
+      Vestibulum imperdiet commodo velit vitae eleifend. Integer rutrum
+      facilisis metus, quis gravida est convallis tincidunt. In quis fringilla
+      ligula. Phasellus a eros odio. Proin rutrum, ligula id interdum faucibus,
+      quam ipsum laoreet lectus, ac dignissim tortor quam non metus. Cras vel
+      tristique orci. Phasellus eleifend nisi sed sem dictum eleifend. Aenean
+      tincidunt aliquet ultricies. Aenean posuere mi ac fermentum condimentum.
+      Etiam cursus blandit malesuada. Pellentesque quis est at sem rutrum
+      suscipit in ut tortor.
+    </p>
+  </body>
+</html>
