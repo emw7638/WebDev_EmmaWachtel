@@ -1,0 +1,1 @@
+[Midterm Project Proposal](https://www.canva.com/design/DAHCQ2W9NTQ/dJPYCLJ0SQxAg_29X8vGHA/edit?utm_content=DAHCQ2W9NTQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
