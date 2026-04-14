@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple User Input</title>
+    <style>
+      h1 {
+        text-transform: uppercase;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      .purple {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="changeMe">Get user input</h1>
+
+    <form>
+      <fieldset>
+        <legend>Picks a number between 0 and 3</legend>
+        <label for="num">0,1,2,3</label>
+        <input
+          name="num"
+          id="num"
+          type="number"
+          step="1"
+          min="0"
+          max="3"
+          placeholder="1"
+          required
+        />
+
+        <button type="button" id="changeBtn" class="btnClass">
+          Click to change the title color
+        </button>
+      </fieldset>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // add event listeners
+        let myBtn = document.getElementById('changeBtn')
+        // console.log(myBtn.classList)
+        myBtn.addEventListener('click', pickAClass)
+      })
+
+      const pickAClass = (event) => {
+        // console.log(event)
+
+        //grab our user input
+        let userN = document.getElementById('num').value
+        console.log(typeof userN)
+        // its a string not a number we need to parse it
+        let n = parseInt(userN)
+        console.log(typeof n)
+
+        let h = document.getElementById('changeMe')
+
+        switch (n) {
+          case 0:
+            h.className = 'red'
+            break
+          case 1:
+            h.className = 'green'
+            break
+          case 2:
+            h.className = 'blue'
+            break
+          case 3:
+            h.className = 'purple'
+            break
+          default:
+            // this is where you put the none of the above option. you can just break to exit
+            break
+        }
+      }
+    </script>
+  </body>
+</html>
