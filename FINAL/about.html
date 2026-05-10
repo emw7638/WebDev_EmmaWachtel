@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Primrose Apiary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top apiary-nav">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html"><span class="brand-mark">P</span><span>Primrose Apiary</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <!-- Begin About Hero -->
+      <section class="page-hero story-hero">
+        <div class="container">
+          <p class="eyebrow">Our story</p>
+          <h1>A local apiary built around care for bees, gardens, and good food.</h1>
+        </div>
+      </section>
+      <!-- End About Hero -->
+
+      <!-- Begin Brand Story Section -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <img class="rounded-image" src="img/beekeeper.jpg" alt="Beekeeper checking a hive frame" />
+            </div>
+            <div class="col-lg-6">
+              <p class="eyebrow">Fictional local business</p>
+              <h2>Started with two hives behind a community garden.</h2>
+              <p>
+                Primrose Apiary is a small family-run apiary that keeps hives near wildflower fields, herb beds, and backyard orchards. The mission is simple: harvest thoughtfully, protect pollinators, and make honey that tastes like the place it came from.
+              </p>
+              <p>
+                The apiary plants native flowers, avoids harsh treatments during nectar flow, and keeps enough honey in the hive so colonies stay strong through the season.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Brand Story Section -->
+
+      <!-- Begin Honey Process Section -->
+      <section class="section-pad blue-band">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive process</p>
+            <h2>From flower to jar</h2>
+          </div>
+          <div class="process-layout">
+            <div class="process-buttons" role="tablist" aria-label="Honey making steps">
+              <button class="process-step active" data-step="0">1. Nectar</button>
+              <button class="process-step" data-step="1">2. Hive</button>
+              <button class="process-step" data-step="2">3. Extract</button>
+              <button class="process-step" data-step="3">4. Bottle</button>
+            </div>
+            <article class="process-panel" id="processPanel">
+              <span class="process-number">01</span>
+              <h3>Bees collect nectar</h3>
+              <p>Foragers visit flowers and bring nectar back to the hive, spreading pollen as they travel through the neighborhood.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Honey Process Section -->
+
+      <!-- Begin Bee Education Section -->
+      <section class="section-pad eco-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Bee education</p>
+            <h2>Why pollinators matter</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4"><div class="info-card"><h3>Gardens</h3><p>Pollinators help fruits, vegetables, and flowers reproduce by moving pollen from bloom to bloom.</p></div></div>
+            <div class="col-md-4"><div class="info-card"><h3>Habitat</h3><p>Native plants, shallow water, and pesticide awareness make outdoor spaces safer for bees.</p></div></div>
+            <div class="col-md-4"><div class="info-card"><h3>Seasonality</h3><p>Each honey harvest reflects the plants blooming nearby, so honey can change like a seasonal menu.</p></div></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Bee Education Section -->
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <footer class="site-footer"><div class="container"><p>Primrose Apiary</p></div></footer>
+    <!-- End Footer -->
+    <!-- Begin Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

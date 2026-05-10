@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visit | Primrose Apiary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top apiary-nav">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html"><span class="brand-mark">P</span><span>Primrose Apiary</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="visit.html">Visit</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <!-- Begin Page Title -->
+      <section class="simple-page-title">
+        <div class="container">
+          <h1>Visit</h1>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- Begin Visit And Map Section -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <div class="visit-card">
+                <p class="eyebrow">Location</p>
+                <h2>14 Primrose Dr<br />Katonah, NY 10536</h2>
+                <div class="hours-list">
+                  <div><span>Thursday</span><strong>12 PM - 5 PM</strong></div>
+                  <div><span>Friday</span><strong>12 PM - 5 PM</strong></div>
+                  <div><span>Saturday</span><strong>9 AM - 2 PM</strong></div>
+                </div>
+                <button class="btn btn-honey w-100" id="distanceBtn">Find how far you are from us</button>
+                <p class="distance-result" id="distanceResult">Your browser will ask permission to use your location.</p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="map-frame">
+                <div id="leafletMap" role="img" aria-label="Leaflet map showing Primrose Apiary in Katonah, New York"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Visit And Map Section -->
+
+      <!-- Begin Plan Visit Section -->
+      <section class="section-pad blue-band">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2>Plan a visit around the harvest calendar.</h2>
+              <p>Spring brings pale clover jars, summer brings big wildflower flavor, and fall brings darker amber honey for baking.</p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btn btn-outline-warm" data-bs-toggle="modal" data-bs-target="#directionsModal">Plan a visit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Plan Visit Section -->
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Begin Directions Modal -->
+    <div class="modal fade custom-modal" id="directionsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h2>Visit notes</h2>
+          <p>Wear closed-toe shoes if you are touring near the hives, and stop by the farm stand first for samples.</p>
+          <a class="btn btn-honey" href="contact.html">Ask about tours</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Directions Modal -->
+
+    <!-- Begin Footer -->
+    <footer class="site-footer"><div class="container"><p>Primrose Apiary</p></div></footer>
+    <!-- End Footer -->
+    <!-- Begin Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

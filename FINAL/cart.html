@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart | Primrose Apiary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top apiary-nav">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html"
+          ><span class="brand-mark">P</span><span>Primrose Apiary</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="visit.html">Visit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active cart-pill" href="cart.html"
+                >Cart <span class="cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <!-- Begin Page Title -->
+      <section class="simple-page-title">
+        <div class="container">
+          <h1>Cart</h1>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- Begin Cart And Checkout Section -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="cart-list" id="cartList"></div>
+              <div class="cart-empty d-none" id="cartEmpty">
+                <h2>Your cart is empty.</h2>
+                <p>
+                  Add a jar from the products page to test the checkout flow.
+                </p>
+                <a class="btn btn-honey" href="products.html">Shop products</a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <aside class="checkout-panel">
+                <h2>Order summary</h2>
+                <div class="summary-line">
+                  <span>Subtotal</span><strong id="subtotal">$0.00</strong>
+                </div>
+                <div class="summary-line">
+                  <span>Market pickup</span><strong>Free</strong>
+                </div>
+                <div class="summary-line total">
+                  <span>Total</span><strong id="cartTotal">$0.00</strong>
+                </div>
+                <form class="checkout-form needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="checkoutName">Name</label
+                      ><input class="form-control" id="checkoutName" required />
+                    </div>
+                    <div class="col-12">
+                      <label for="checkoutEmail">Email</label
+                      ><input
+                        class="form-control"
+                        type="email"
+                        id="checkoutEmail"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="checkoutAddress">Address</label
+                      ><input
+                        class="form-control"
+                        id="checkoutAddress"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="checkoutPayment">Payment</label
+                      ><input
+                        class="form-control"
+                        id="checkoutPayment"
+                        placeholder="Card ending 4242"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <button class="btn btn-honey w-100 mt-4" type="submit">
+                    Place Order
+                  </button>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cart And Checkout Section -->
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <footer class="site-footer">
+      <div class="container"><p>Primrose Apiary</p></div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Begin Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

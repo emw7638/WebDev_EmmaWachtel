@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Primrose Apiary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top apiary-nav">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html">
+          <span class="brand-mark">P</span>
+          <span>Primrose Apiary</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Hero -->
+    <header class="hero home-hero">
+      <div class="hero-media" role="img" aria-label="Golden honey jars and honeycomb"></div>
+      <img class="flying-bee" src="img/bee.png" alt="" aria-hidden="true" />
+      <div class="container hero-content">
+        <p class="eyebrow">Small batch local honey</p>
+        <h1>Primrose Apiary</h1>
+        <p class="hero-copy">
+          Pure honey, from hive to home. Harvested gently from neighborhood hives and bottled with the seasons.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a class="btn btn-honey btn-lg" href="products.html">Shop Products</a>
+          <a class="btn btn-outline-warm btn-lg" href="#bee-facts">Explore Honey</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Hero -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <!-- Begin Intro Section -->
+      <section class="section-pad intro-band">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <p class="eyebrow">Our apiary</p>
+              <h2>Honey with a place, a season, and a story.</h2>
+            </div>
+            <div class="col-lg-6">
+              <p class="lead">
+                Primrose Apiary is a local apiary inspired by neighborhood beekeepers, native gardens, and slow food markets. Every jar highlights a different bloom season, from spring clover to late-summer wildflower.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Intro Section -->
+
+      <!-- Begin Featured Products Section -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured jars</p>
+            <h2>Start with the best sellers</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="product-card lift-card">
+                <img src="img/product-wildflower.jpg" alt="Jar of wildflower honey" />
+                <div class="product-body">
+                  <span class="product-tag">Raw</span>
+                  <h3>Wildflower Honey</h3>
+                  <p>Bright, floral, and gathered from backyard blooms around the valley.</p>
+                  <a href="products.html" class="text-link">View jar</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="product-card lift-card">
+                <img src="img/product-comb.jpg" alt="Honeycomb close up" />
+                <div class="product-body">
+                  <span class="product-tag">Comb</span>
+                  <h3>Raw Comb Honey</h3>
+                  <p>Cut straight from the frame for cheese boards, toast, and gifts.</p>
+                  <a href="products.html" class="text-link">View jar</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="product-card lift-card">
+                <img src="img/product-lavender.jpg" alt="Honey with herbs" />
+                <div class="product-body">
+                  <span class="product-tag">Infused</span>
+                  <h3>Lavender Honey</h3>
+                  <p>A soft herbal infusion made for tea, biscuits, and quiet mornings.</p>
+                  <a href="products.html" class="text-link">View jar</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Featured Products Section -->
+
+      <!-- Begin Interactive Honeycomb Facts Section -->
+      <section class="section-pad blue-band" id="bee-facts">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Tap the honeycomb</p>
+            <h2>Little facts from the hive</h2>
+          </div>
+          <div class="honeycomb-grid">
+            <button class="hex-tile active" data-fact="A single bee can visit thousands of blossoms in one day, carrying pollen between flowers as she works.">Pollination</button>
+            <button class="hex-tile" data-fact="Honey gets its flavor from local nectar, which means each harvest can taste slightly different.">Flavor</button>
+            <button class="hex-tile" data-fact="Raw honey is strained instead of overheated, helping preserve its natural aroma and texture.">Raw honey</button>
+            <button class="hex-tile" data-fact="Bees seal ripe honey with wax cappings when the moisture level is just right for storage.">Capping</button>
+            <button class="hex-tile" data-fact="Apiaries support gardens by giving pollinators protected habitat near flowers and water.">Habitat</button>
+          </div>
+          <div class="fact-panel" id="factPanel">
+            A single bee can visit thousands of blossoms in one day, carrying pollen between flowers as she works.
+          </div>
+        </div>
+      </section>
+      <!-- End Interactive Honeycomb Facts Section -->
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+        <p>Primrose Apiary</p>
+        <p>Handcrafted honey, pollinator care, and seasonal market jars.</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Begin Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

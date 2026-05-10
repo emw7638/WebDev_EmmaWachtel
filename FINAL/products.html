@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products | Primrose Apiary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top apiary-nav">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html"><span class="brand-mark">P</span><span>Primrose Apiary</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="visit.html">Visit</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <!-- Begin Page Title -->
+      <section class="simple-page-title">
+        <div class="container">
+          <h1>Products</h1>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- Begin Product Filter And Grid -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="filter-bar">
+            <div>
+              <label for="typeFilter">Type</label>
+              <select class="form-select" id="typeFilter" data-filter="type">
+                <option value="all">All types</option>
+                <option value="raw">Raw</option>
+                <option value="infused">Infused</option>
+                <option value="comb">Comb</option>
+              </select>
+            </div>
+            <div>
+              <label for="sizeFilter">Size</label>
+              <select class="form-select" id="sizeFilter" data-filter="size">
+                <option value="all">All sizes</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <div>
+              <label for="flavorFilter">Flavor</label>
+              <select class="form-select" id="flavorFilter" data-filter="flavor">
+                <option value="all">All flavors</option>
+                <option value="floral">Floral</option>
+                <option value="classic">Classic</option>
+                <option value="herbal">Herbal</option>
+                <option value="bright">Bright</option>
+              </select>
+            </div>
+            <button class="btn btn-outline-warm" id="resetFilters">Reset</button>
+          </div>
+
+          <div class="row g-4 product-grid" id="productGrid">
+            <div class="col-md-6 col-xl-4 product-item" data-type="raw" data-size="medium" data-flavor="floral">
+              <article class="product-card lift-card" data-product-id="wildflower">
+                <img src="img/product-wildflower.jpg" alt="Wildflower honey jar" />
+                <div class="product-body">
+                  <span class="product-tag">Raw</span>
+                  <h3>Wildflower Honey</h3>
+                  <p>Floral, golden, and gathered from late-summer meadow blooms.</p>
+                  <div class="product-actions"><strong>$12</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 product-item" data-type="raw" data-size="large" data-flavor="classic">
+              <article class="product-card lift-card" data-product-id="clover">
+                <img src="img/product-clover.jpg" alt="Clover honey jar" />
+                <div class="product-body">
+                  <span class="product-tag">Raw</span>
+                  <h3>Clover Honey</h3>
+                  <p>Clean, familiar sweetness for everyday toast, tea, and baking.</p>
+                  <div class="product-actions"><strong>$15</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 product-item" data-type="comb" data-size="small" data-flavor="classic">
+              <article class="product-card lift-card" data-product-id="comb">
+                <img src="img/product-comb.jpg" alt="Raw comb honey" />
+                <div class="product-body">
+                  <span class="product-tag">Comb</span>
+                  <h3>Raw Comb Honey</h3>
+                  <p>Edible wax cells filled with capped honey from the frame.</p>
+                  <div class="product-actions"><strong>$18</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 product-item" data-type="infused" data-size="medium" data-flavor="herbal">
+              <article class="product-card lift-card" data-product-id="lavender">
+                <img src="img/product-lavender.jpg" alt="Lavender infused honey" />
+                <div class="product-body">
+                  <span class="product-tag">Infused</span>
+                  <h3>Lavender Honey</h3>
+                  <p>Soft herbal notes for tea, biscuits, and fruit bowls.</p>
+                  <div class="product-actions"><strong>$14</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 product-item" data-type="infused" data-size="small" data-flavor="bright">
+              <article class="product-card lift-card" data-product-id="citrus">
+                <img src="img/product-citrus.jpg" alt="Citrus honey with lemon" />
+                <div class="product-body">
+                  <span class="product-tag">Infused</span>
+                  <h3>Citrus Blossom Honey</h3>
+                  <p>Sunny lemon peel and orange blossom for sparkling drinks.</p>
+                  <div class="product-actions"><strong>$13</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 product-item" data-type="raw" data-size="large" data-flavor="bright">
+              <article class="product-card lift-card" data-product-id="buckwheat">
+                <img src="img/product-amber.jpg" alt="Dark honey jar" />
+                <div class="product-body">
+                  <span class="product-tag">Raw</span>
+                  <h3>Autumn Amber Honey</h3>
+                  <p>Darker, deeper, and perfect for marinades or sharp cheese.</p>
+                  <div class="product-actions"><strong>$16</strong><button class="btn btn-honey btn-sm details-btn">Details</button></div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <p class="empty-state d-none" id="emptyProducts">No jars match those filters yet. Try another combination.</p>
+        </div>
+      </section>
+      <!-- End Product Filter And Grid -->
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Begin Product Modal -->
+    <div class="modal fade custom-modal" id="productModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row g-0">
+            <div class="col-md-5"><img id="modalImage" class="modal-product-img" src="" alt="" /></div>
+            <div class="col-md-7">
+              <div class="modal-body p-4 p-lg-5">
+                <span class="product-tag" id="modalType">Raw</span>
+                <h2 id="modalTitle">Honey</h2>
+                <p id="modalStory"></p>
+                <p class="modal-price" id="modalPrice">$12</p>
+                <button class="btn btn-honey" id="addToCartBtn">Add to cart</button>
+                <a class="btn btn-outline-warm ms-sm-2 mt-2 mt-sm-0" href="cart.html">View cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Modal -->
+
+    <!-- Begin Footer -->
+    <footer class="site-footer"><div class="container"><p>Primrose Apiary</p></div></footer>
+    <!-- End Footer -->
+    <!-- Begin Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>
